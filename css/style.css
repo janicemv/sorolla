@@ -1,0 +1,285 @@
+body {
+  font-family: 'AfacadFlux', sans-serif;
+  color: #222222;
+  ;
+  font-size: 1em;
+}
+
+#title {
+  background-color: white;
+  color: black;
+  padding-left: 1em;
+}
+
+nav {
+  background-color: #474747;
+  color: white;
+  margin: 0 auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding-left: 0.8em;
+}
+
+nav a:hover {
+  background-color: #ececec;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  border-bottom: 1px white dotted;
+  padding: 0;
+
+}
+
+.block {
+  background-color: #272727;
+  padding: 0.8em;
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100%;
+}
+
+.block-title {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.block a {
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+
+.block a:hover {
+  text-decoration: underline;
+}
+
+.inhoud,
+.block {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.inhoud {
+  padding: 1em;
+  margin: 0 auto;
+
+}
+
+.inhoud h2 {
+  margin-bottom: 0.3em;
+}
+
+.inhoud h3 {
+  margin-top: 0;
+}
+
+.inhoud a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.spaced-letters {
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#feiten,
+#tags {
+  display: none;
+}
+
+@media (max-width: 639px) {
+
+  #title a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .images {
+    display: none;
+  }
+
+  #andere-werken a {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  #andere-werken a:hover {
+    text-decoration: underline;
+  }
+
+  .inhoud {
+    margin-right: 1.5em;
+    /* Ajuste o valor conforme necessário */
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    background-image: url('../img/rothko/rothko17.jpg');
+    background-color: #ff0000;
+    margin: 0 auto;
+    font-size: 1.1em;
+    padding: 0;
+  }
+
+  header {
+    background-color: #373737;
+  }
+
+  .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+  }
+
+  #title {
+    background-color: transparent;
+    margin: 0;
+    color: white;
+    padding: 0;
+  }
+
+  #title a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav {
+    background-color: transparent;
+    margin: 0;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 2em;
+  }
+
+  nav li {
+    border-bottom: none;
+  }
+
+  nav a {
+    padding: 0;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: #5C90DB;
+    background-color: transparent;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4% 7%;
+    height: 100%;
+  }
+
+  .inhoud {
+    width: 70%;
+    background-color: white;
+  }
+
+  .block {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #272727;
+  }
+
+  #feiten {
+    display: block;
+    width: 100%;
+    margin: 0;
+
+  }
+
+  #feiten ul {
+    list-style-type: none;
+    padding: 0.5em 1em;
+  }
+
+  .date {
+    font-weight: bold;
+  }
+
+  #tags {
+    display: block;
+    width: 100%;
+
+  }
+
+  #tags a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #373737;
+    width: 80%;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+    justify-content: space-between;
+  }
+
+  #tags a:hover {
+    background-color: #575757;
+  }
+
+  #andere-werken {
+    width: 100%;
+    background-color: #272727;
+
+
+  }
+
+  #andere-werken ul {
+    display: none;
+
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+  }
+
+  .image {
+    position: relative;
+    border: 0.1em solid #FFC0CB;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 5em;
+  }
+
+  #andere-werken img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+}
